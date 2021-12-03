@@ -8,7 +8,77 @@
     <script src="script.js"></script>
     <title>Tic tac toe</title>
 </head>
+
 <body>
-    
+    <img class="game-over d-none" id="gameOver" src="./img/gameOver.png" alt="">
+    <button class="restart-btn d-none" id="restartBtn" onclick="restart()">Restart</button>
+    <div class="players">
+        <div class="player-inactive" id="player-1">
+            <img  src="img/circle.png" alt="">Player 1
+        </div>
+        <div id="player-2">
+            <img src="./img/cross.png" alt="">Player 2
+        </div>
+         </div>
+
+         <div id="line-1" class="horizontal-line" style="top: 300px"></div>
+         <div id="line-2" class="horizontal-line" style="top: 440px"></div>
+         <div id="line-3" class="horizontal-line" style="top: 580px"></div>
+
+         
+         <div id="line-4" class="horizontal-line make-vertical" style="top: 440px; left: 150px;"></div>
+         <div id="line-5" class="horizontal-line make-vertical" style="top: 440px; right: 150px;"></div>
+         <div id="line-6" class="horizontal-line make-vertical" style="top: 440px"></div>
+
+         <div id="line-7" class="horizontal-line" style="top: 440px; transform: rotate(45deg) scaleX(0.0);"></div>
+         <div id="line-8" class="horizontal-line" style="top: 440px; transform: rotate(-45deg) scaleX(0.0) ;"></div>
+
+
+         <table>
+            <tr>
+                <td onclick="fillShape(0)">
+                    <img id="circle-0" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-0" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+                <td onclick="fillShape(1)">
+                    <img id="circle-1" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-1" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+                <td onclick="fillShape(2)">
+                    <img id="circle-2" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-2" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+            </tr>
+
+            <tr>
+                <td  onclick="fillShape(3)">
+                    <img id="circle-3" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-3" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+                <td onclick="fillShape(4)">
+                    <img id="circle-4" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-4" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+                <td onclick="fillShape(5)">
+                    <img id="circle-5" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img  id="cross-7" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+            </tr>
+
+            <tr>
+                <td onclick="fillShape(6)">
+                    <img id="circle-6" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-6" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+                <td onclick="fillShape(7)">
+                    <img id="circle-7" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-7" class="shaoe d-none" src="./img/cross.png" alt="">
+                    </td>
+                <td onclick="fillShape(8)">
+                    <img id="circle-8" class="shaoe d-none" src="img/circle.png" alt="">
+                    <img id="cross-8" class="shaoe d-none" src="./img/cross.png" alt="">
+                </td>
+            </tr>
+        </table>
 </body>
 </html>
